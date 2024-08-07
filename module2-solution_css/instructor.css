@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    padding: auto;
+    margin: 30px;
+    margin-bottom: 40px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.Container1,.Container2,.Container3{
+    background-color: gray;
+    border: 5px solid black;
+    margin: 20px;
+    width: 33.33%;
+    
+}
+.red,.pink,.yellow{
+    float: right;
+    text-align: center;
+}
+.words{
+    margin: 10px;
+    
+}
+.pink{
+    background-color: palevioletred;
+    width: 75px;
+    border: 2px solid black;
+}
+.red{
+    width: 75px;
+    background-color:red;
+    border: 2px solid black;
+}
+.yellow{
+    width: 75px;
+    background-color: orange;
+    border: 2px solid black;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .words {
+        width: 50%; /* First two sections take up 1/2 of the container width */
+    }
+
+    .words:nth-child(3) {
+        width: 100%; /* Third section takes up the entire row */
+        float: none;
+    }
+}
+
+/* Mobile view (<= 767px) */
+@media (max-width: 767px) {
+    .words {
+        width: 100%; /* Each section takes up the entire width of the container */
+        float: none;
+    }
+}
